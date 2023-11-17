@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2>Pokedex</h2>
+      </header>
+      <nav>
+        <div class="btn-previous" onclick="handleButtonNavigation('previous')">
+          <img src="./assets/arrow-pokemon.png" alt="button-next" />
+        </div>
+        <div class="btn-next" onclick="handleButtonNavigation('next')">
+          <img src="./assets/arrow-pokemon.png" alt="button-next" />
+        </div>
+      </nav>
+      <main>
+        <div id="content"></div>
+      </main>
+    </div>
+  </body>
+  <script type="text/javascript" src="main.js"></script>
+</html>

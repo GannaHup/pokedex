@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Play', sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 10px auto;
+}
+
+header {
+  text-align: center;
+  background-color: #ee1515;
+  color: white;
+  padding: 16px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 40px;
+  background-color: #222224;
+  position: relative;
+  height: 76px;
+}
+
+.btn-next img,
+.btn-previous img {
+  width: 40px;
+}
+
+.btn-previous {
+  transform: rotate(-90deg);
+  position: absolute;
+  left: 40px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.btn-previous.hide,
+.btn-next.hide {
+  display: none;
+}
+
+.btn-next {
+  position: absolute;
+  right: 40px;
+  z-index: 1;
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+main {
+  background-color: #f8f8f8;
+  height: 80vh;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 24px 32px;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+
+.card {
+  width: 120px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 4px 2px 16px 1px rgb(238, 21, 21, .15);
+}
+
+.image-card {
+  width: 100%;
+}
+
+.pokemon-name {
+  text-align: center;
+}
